@@ -15,10 +15,8 @@ if ($_SERVER['REQUEST_METHOD'] === 'OPTIONS') {
 header("Content-Type: application/json");
 
 // Database connection configuration
-$host = "localhost";
-$user = "root";
-$password = "";
-$database = "mynewdb";
+require 'db.php';
+
 
 // Function to send standardized JSON response
 function sendResponse($success, $message, $data = null, $statusCode = 200) {
@@ -31,12 +29,6 @@ function sendResponse($success, $message, $data = null, $statusCode = 200) {
     exit;
 }
 
-// Connect to database
-$conn = new mysqli($host, $user, $password, $database);
-
-if ($conn->connect_error) {
-    sendResponse(false, 'Database connection failed: ' . $conn->connect_error, null, 500);
-}
 
 // Get JSON data from the request
 $data = json_decode(file_get_contents('php://input'), true);
