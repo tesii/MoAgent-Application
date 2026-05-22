@@ -1,19 +1,9 @@
 <?php
-$servername = "localhost";  // Change if necessary to your IP address
-$username = "root";          // Your database username
-$password = "";              // Your database password
-$dbname = "mynewdb";        // Your database name
+require 'db.php';      
+
 
 header('Content-Type: application/json');
 header('Access-Control-Allow-Origin: *');  // Allow requests from any origin
-
-// Create connection
-$conn = new mysqli($servername, $username, $password, $dbname);
-
-// Check connection
-if ($conn->connect_error) {
-    die("Connection failed: " . $conn->connect_error);
-}
 
 // SQL query to get roles
 $sql = "SELECT role_id, role_name FROM roles";
