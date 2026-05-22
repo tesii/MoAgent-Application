@@ -1,8 +1,5 @@
 <?php
-$servername = "localhost"; // Change to your database server
-$username = "root";         // Your database username
-$password = "";             // Your database password
-$dbname = "mynewdb";       // Your database name
+require 'db.php';      
 
 // Set the content type to JSON and allow CORS
 header('Content-Type: application/json');
@@ -11,15 +8,6 @@ header('Access-Control-Allow-Origin: *'); // Allow requests from any origin
 // Uncomment the following lines for development purposes
 error_reporting(E_ALL);
 ini_set('display_errors', 1);
-
-// Create connection
-$conn = new mysqli($servername, $username, $password, $dbname);
-
-// Check connection
-if ($conn->connect_error) {
-    echo json_encode(['error' => 'Database connection failed: ' . $conn->connect_error]);
-    exit; // Exit early if the connection fails
-}
 
 // Function to fetch unique values with optional filtering
 function fetchUniqueValues($conn, $table, $column, $filterColumn = null, $filterValue = null) {
