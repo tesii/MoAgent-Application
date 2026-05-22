@@ -17,7 +17,7 @@ It displays analytics results using charts and dashboards to help users understa
 ## 🎯 UI Screenshot
 ## login page
 <img width="475" height="326" alt="image" src="https://github.com/user-attachments/assets/408ad2e5-5422-44c0-9b23-562fbf832f25" />
-## Signup page
+** Signup page
 <img width="459" height="185" alt="image" src="https://github.com/user-attachments/assets/7972eec8-e751-432b-a022-9da9068866e2" />
 ## Dashboard page
 <img width="464" height="224" alt="image" src="https://github.com/user-attachments/assets/72f2c5f7-ac64-4926-be5b-62756dc39a70" />
