@@ -3,11 +3,7 @@
 error_reporting(E_ALL);
 ini_set('display_errors', 1);
 
-// Database connection parameters
-$host = "localhost";     
-$dbname = "mynewdb";     
-$username = "root";      
-$password = "";          
+require 'db.php';      
 
 // Define all partitions
 $partitions = [
@@ -28,14 +24,7 @@ $partitions = [
 // Set the batch size to 50
 $batchSize = 200000;
 
-// Create a connection
-try {
-    $conn = new PDO("mysql:host=$host;dbname=$dbname", $username, $password);
-    $conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
-    echo "<div class='alert alert-success'>Connected successfully to database</div>";
-} catch(PDOException $e) {
-    die("<div class='alert alert-danger'>Connection failed: " . $e->getMessage() . "</div>");
-}
+
 
 // File to store offsets
 $offsetFile = 'offsets.json';
