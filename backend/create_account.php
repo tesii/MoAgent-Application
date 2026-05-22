@@ -1,34 +1,7 @@
 
 
 <?php
-// config.php - Database configuration
-define('DB_HOST', 'localhost');
-define('DB_USER', 'root');
-define('DB_PASS', '');
-define('DB_NAME', 'mynewdb');
-
-// db_connection.php
-class DatabaseConnection {
-    private $conn;
-    
-    public function __construct() {
-        try {
-            $this->conn = new PDO(
-                "mysql:host=" . DB_HOST . ";dbname=" . DB_NAME,
-                DB_USER,
-                DB_PASS
-            );
-            $this->conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
-        } catch(PDOException $e) {
-            echo "Connection failed: " . $e->getMessage();
-        }
-    }
-    
-    public function getConnection() {
-        return $this->conn;
-    }
-}
-// insert_user.php
+require 'db.php';      
 header('Access-Control-Allow-Origin: *');
 header('Content-Type: application/json');
 header('Access-Control-Allow-Methods: POST');
