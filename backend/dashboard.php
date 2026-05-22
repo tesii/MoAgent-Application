@@ -1,17 +1,6 @@
 <?php
 // Step 1: Database connection
-$servername = "localhost"; // Your server name
-$username = "root"; // Your username
-$password = ""; // Your password
-$dbname = "mynewdb"; // Your database name
-
-// Create connection
-$conn = new mysqli($servername, $username, $password, $dbname);
-
-// Check connection
-if ($conn->connect_error) {
-    die("Connection failed: " . $conn->connect_error);
-}
+require 'db.php';      
 
 // Step 2: Prepare and execute the SQL query
 // Assuming you have the user's Franchise_Name after login. For demonstration, we are using a hardcoded example.
