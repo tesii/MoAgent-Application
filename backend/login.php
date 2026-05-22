@@ -14,21 +14,8 @@ if ($_SERVER['REQUEST_METHOD'] === 'OPTIONS') {
 // Set content type to JSON
 header("Content-Type: application/json");
 
-// Connect to database
-$host = "localhost";
-$user = "root";
-$password = "";
-$database = "mynewdb";
+require 'db.php';      
 
-$conn = new mysqli($host, $user, $password, $database);
-
-if ($conn->connect_error) {
-    echo json_encode([
-        'success' => false,
-        'message' => 'Database connection failed: ' . $conn->connect_error
-    ]);
-    exit;
-}
 
 // Get JSON data from the request
 $data = json_decode(file_get_contents('php://input'), true);
