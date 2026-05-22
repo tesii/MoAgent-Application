@@ -24,20 +24,9 @@ if (!isset($data)) {
     exit();
 }
 
-// Database connection
-$servername = "localhost";
-$username = "root"; // Change to your DB username
-$password = ""; // Change to your DB password
-$dbname = "mynewdb"; // Change to your database name
+require 'db.php';      
 
-// Create connection
-$conn = new mysqli($servername, $username, $password, $dbname);
 
-// Check connection
-if ($conn->connect_error) {
-    echo json_encode(['error' => 'Connection failed: ' . $conn->connect_error]);
-    exit();
-}
 
 // Extract filter parameters
 $role = $data['role'] ?? '';
