@@ -1,16 +1,40 @@
-# user_auth
+# MoAgent Frontend (Flutter)
 
-A new Flutter project.
+## 📌 Project Overview
+The MoAgent Frontend is a Flutter-based application that provides an interactive interface for visualizing agent transaction behavior, focusing on cash-in and cash-out patterns.
 
-## Getting Started
+It displays analytics results using charts and dashboards to help users understand transaction trends.
 
-This project is a starting point for a Flutter application.
+---
 
-A few resources to get you started if this is your first Flutter project:
+## 🎯 Scope and Objectives
+- Visualize cash-in and cash-out transaction patterns
+- Display data by day and hour
+- Provide interactive dashboards for users
+- Support decision-making through visual analytics
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+---
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+## 🛠️ Technologies Used
+- Flutter (Frontend Framework)
+- Dart
+- Flychart (Data Visualization)
+- HTTP (API communication)
+
+---
+
+## 📊 Features
+- Interactive charts and graphs
+- Transaction trend visualization
+- Clean and responsive UI
+- Real-time data integration with backend API
+
+---
+
+## 🔗 Backend Integration
+The frontend consumes data from the MoAgent PHP backend via REST APIs and displays it using visual charts.
+
+---
+
+## 🚀 Purpose
+To provide a user-friendly dashboard that transforms raw transaction data into meaningful visual insights.
