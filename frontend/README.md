@@ -14,6 +14,12 @@ It displays analytics results using charts and dashboards to help users understa
 - Support decision-making through visual analytics
 
 ---
+## 🎯 UI Screenshot
+
+<img width="475" height="326" alt="image" src="https://github.com/user-attachments/assets/408ad2e5-5422-44c0-9b23-562fbf832f25" />
+
+
+
 
 ## 🛠️ Technologies Used
 - Flutter (Frontend Framework)
