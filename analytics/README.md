@@ -13,6 +13,10 @@ The MoAgent Analytics module is responsible for analyzing agent transaction beha
 - Support visual reporting through dashboards
 
 ---
+## Screenshots
+
+<img width="566" height="269" alt="image" src="https://github.com/user-attachments/assets/dcdccec4-9372-472b-be10-e154bfadc735" />
+
 
 ## 🛠️ Technologies Used
 - PHP (Data processing)
