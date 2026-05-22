@@ -3,19 +3,8 @@
 // Set Content-Type to JSON
 header('Content-Type: application/json');
 header('Access-Control-Allow-Origin: *'); // Allow requests from any origin
-// Database credentials
-$host = 'localhost';
-$username = 'root';
-$password = '';
-$dbname = 'mynewdb';
+require 'db.php';      
 
-// Create connection
-$conn = new mysqli($host, $username, $password, $dbname);
-
-// Check connection
-if ($conn->connect_error) {
-    die(json_encode(["error" => "Connection failed: " . $conn->connect_error]));
-}
 
 // SQL query
 // Query the sales_data_mart_copy_partitioned table with a limit
