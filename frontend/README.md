@@ -25,13 +25,21 @@ It displays analytics results using charts and dashboards to help users understa
 ---
 # Dashboard page
 <img width="464" height="224" alt="image" src="https://github.com/user-attachments/assets/72f2c5f7-ac64-4926-be5b-62756dc39a70" />
-## Insight page
+
+---
+# Insight page
 <img width="461" height="141" alt="image" src="https://github.com/user-attachments/assets/c9b8203a-3711-49c3-89bc-8bbcbf6b516b" />
-## SRM insight page
+
+---
+# SRM insight page
 <img width="467" height="217" alt="image" src="https://github.com/user-attachments/assets/7aec4df7-474f-44dd-acbe-bdb8e6cdb923" />
-## Sector Cashin vs cashout page
+
+---
+# Sector Cashin vs cashout page
 <img width="464" height="113" alt="image" src="https://github.com/user-attachments/assets/99daadc4-e2d5-45a5-a187-dab48426400a" />
-## Time series page
+
+---
+# Time series page
 <img width="460" height="86" alt="image" src="https://github.com/user-attachments/assets/6cd7ab8f-cc92-4df2-9841-9b524cecf8c7" />
 <img width="460" height="225" alt="image" src="https://github.com/user-attachments/assets/8eb3d0be-de67-4fe0-8eaa-0a961328f510" />
 
