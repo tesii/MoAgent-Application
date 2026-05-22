@@ -1,15 +1,10 @@
 
 <?php
-// Configure database connection
-$host = "localhost"; // Your database host
-$dbname = "mynewdb"; // Replace with your database name
-$username = "root"; // Replace with your database username
-$password = ""; // Replace with your database password
+require 'db.php';      
+
 
 try {
-    // Create a new PDO instance
-    $pdo = new PDO("mysql:host=$host;dbname=$dbname", $username, $password);
-    $pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+
     
     // Prepare and execute the SQL statement
     $stmt = $pdo->prepare("SELECT * FROM user_accounts");
