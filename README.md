@@ -55,19 +55,18 @@ The MTN Agent Analytics Dashboard solves this by providing real time, visual, an
 
 ## Technologies Used
 
-### Frontend (Mobile / Dashboard)
-  Flutter
-  Dart
-  State Management (Provider / Riverpod)
-  Charts (fl_chart / Syncfusion Flutter Charts)
+### Frontend
+- Flutter (Dart)
+- Responsive UI for mobile & web
+- Chart libraries (fl_chart / syncfusion_flutter_charts)
 
-### Backend (if applicable)
-  Spring Boot / Node.js
-  REST APIs
-  JSON data processing
+### Backend
+- PHP
+- RESTful APIs
+- JSON data handling
 
 ### Database
-  MySQL / PostgreSQL
+- MySQL
 
    
 
@@ -82,17 +81,4 @@ The system follows a layered analytics architecture:
 
    
 
-## How to Run the Project
 
-### Prerequisites
-  Flutter SDK (latest stable)
-  Dart SDK
-  Android Studio / VS Code
-  Backend API (if applicable)
-
-   
-
-### Step 1: Clone Repository
-
-```bash
-git clone https://github.com/yourusername/mtn agent dashboard.git
