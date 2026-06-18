@@ -1,12 +1,15 @@
-# MoAgent APP
+# MoAgent App
 
 ## Overview
 
-MTN Agent Analytics Dashboard is a Flutter based data visualization and intelligence platform designed to analyze agent transaction behavior across different geographic regions (Province → District → Sector).
+MTN Agent Analytics Dashboard is a cross platform analytics system designed to monitor and analyze MTN mobile money agent transactions across geographic regions (Province → District → Sector).
 
-The system focuses on **cash in vs cash out transaction patterns over time**, enabling regional managers to make data driven decisions, identify underperforming areas, and understand transaction behavior trends across MTN mobile money agents.
+The system analyzes **cash in vs cash out behavior over time**, helping regional managers identify low performing areas, understand transaction trends, and make data driven operational decisions.
 
-It transforms raw transaction data into **interactive, real time analytics and actionable insights**.
+The platform combines:
+  Flutter frontend for interactive dashboards
+  PHP backend for data services and APIs
+  Python for data cleaning, processing, and visualization
 
    
 
@@ -14,14 +17,14 @@ It transforms raw transaction data into **interactive, real time analytics and a
 
 Regional managers often lack clear visibility into:
 
-  Which regions are underperforming in agent transactions
-  Cash in vs cash out balance across regions
-  Time periods when transaction activity drops
-  Why certain areas show low agent performance
+  Cash in vs cash out imbalance across regions
+  Performance differences between provinces, districts, and sectors
+  Time periods of low transaction activity
+  Reasons behind underperforming regions
 
-This leads to delayed decision making and inefficient regional support strategies.
+This leads to delayed decisions and inefficient regional strategy.
 
-The MTN Agent Analytics Dashboard solves this by providing real time, visual, and intelligent insights.
+This system solves this by transforming raw transaction data into structured insights and visual analytics.
 
    
 
@@ -29,56 +32,72 @@ The MTN Agent Analytics Dashboard solves this by providing real time, visual, an
 
 ### 📊 Transaction Analytics
   Cash in vs cash out comparison
-  Region based performance tracking (Province, District, Sector)
-  Daily, weekly, and monthly trends
-  Agent level transaction breakdown
+  Region based performance (Province → District → Sector)
+  Time based analysis (daily, weekly, monthly)
+  Agent level transaction behavior tracking
 
-### 📈 Interactive Visualizations
-  Real time charts and dashboards
-  Time series analysis of transactions
-  Region comparison graphs
-  Drill down from province → district → sector
+### 📈 Interactive Dashboards
+  Real time charts and visual analytics
+  Drill down regional analysis
+  Time series trend visualization
+  Comparative region performance graphs
 
 ### 🧠 Smart Insights
   Identification of low performing regions
   Detection of low activity time periods
-  Behavioral trends of MTN agents
-  Performance anomalies and insights
+  Transaction behavior patterns
+  Performance anomaly detection
 
-### 🗺 Regional Intelligence
-  Province level aggregation
-  District level comparison
-  Sector level performance tracking
-  Geo based performance analysis
+### 🐍 Data Processing & Analytics (Python)
+  Data cleaning and preprocessing of raw transactions
+  Generation of statistical insights
+  Creation of analytical graphs and reports
+  Data transformation for dashboard consumption
 
    
 
 ## Technologies Used
 
 ### Frontend
-- Flutter (Dart)
-- Responsive UI for mobile & web
-- Chart libraries (fl_chart / syncfusion_flutter_charts)
+  Flutter (Dart)
+  Interactive UI dashboards
+  Chart libraries (fl_chart / Syncfusion Charts)
 
 ### Backend
-- PHP
-- RESTful APIs
-- JSON data handling
+  PHP
+  RESTful APIs
+  JSON based communication
+
+### Data Processing & Analytics
+  Python
+  Pandas (data cleaning & transformation)
+  Matplotlib / Seaborn (data visualization)
+  NumPy (data processing)
 
 ### Database
-- MySQL
+  MySQL
 
    
 
 ## System Architecture
 
-The system follows a layered analytics architecture:
+The system is built using a multi layer architecture:
 
-  **Flutter Frontend** → Interactive dashboards and charts
-  **Backend API Layer** → Processes transaction data
-  **Database Layer** → Stores agent transaction records
-  **Analytics Engine** → Aggregates and computes regional insights
+  **Flutter Frontend**
+    Displays dashboards and charts
+    Provides user interaction
+
+  **PHP Backend**
+    Handles API requests
+    Manages business logic and data flow
+
+  **Python Analytics Engine**
+    Cleans and processes raw transaction data
+    Generates insights and graphs
+    Prepares structured datasets for the dashboard
+
+  **MySQL Database**
+    Stores transaction and regional data
 
    
-
 
