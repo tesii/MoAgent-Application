@@ -99,5 +99,6 @@ The system is built using a multi layer architecture:
   **MySQL Database**
     Stores transaction and regional data
 
-   
+## Video
+https://www.youtube.com/watch?v=YEoUPgPRy3s
 
